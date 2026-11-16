@@ -1,8 +1,8 @@
-# CKP Finance V4 – Excel Migration
+# CKP Finance V5 – Perbaikan Saldo & Sound Effect
 
-1. Upload seluruh isi folder ini ke root repository GitHub Pages (branch yang dipakai Pages), timpa file lama.
-2. Buka ulang aplikasi setelah deployment selesai.
-3. Masuk Lainnya → Import Excel, pilih NEW CKP V4.xlsx, periksa preview, lalu impor.
-4. Buat backup JSON setelah impor.
+1. Upload seluruh isi folder ini ke root repository GitHub Pages, branch `main`, timpa file lama.
+2. Refresh aplikasi. Buat backup JSON sebelum melakukan impor ulang.
+3. Impor ulang workbook Excel untuk menerapkan perbaikan pemetaan rekening tujuan transfer.
+4. Periksa ringkasan impor, khususnya `transferWithoutDestination` yang harus 0. Jika bukan 0, jangan gunakan saldo sebagai angka final dan kirim ringkasannya.
 
-Catatan: data disimpan lokal di browser/perangkat ini. Arsip workbook penuh disimpan di IndexedDB browser yang sama; pindah perangkat/browser tidak otomatis membawa data. Data sheet yang belum memiliki modul tetap terarsip utuh.
+V5 menambahkan sound effect Web Audio pada interaksi tombol (dengan pengaturan ON/OFF), memperbaiki normalisasi tujuan transfer, dan menambahkan diagnostik saldo saat impor. Data lama di localStorage tidak otomatis dihapus.

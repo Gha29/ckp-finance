@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>CKP - Catatan Keuangan Pribadi</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: #f1f5f9;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 24px 20px;
+      background: #172338;
+      border-bottom: 1px solid #26364d;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4ade80;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .welcome {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    .balance-card {
+      background: linear-gradient(135deg, #166534, #14532d);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .balance-label {
+      color: #bbf7d0;
+      font-size: 14px;
+    }
+
+    .balance {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    .section-title {
+      font-size: 17px;
+      margin: 25px 0 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 18px 14px;
+      min-height: 105px;
+    }
+
+    .card-icon {
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .card-desc {
+      color: #94a3b8;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+
+    .notice {
+      background: #1e293b;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 22px;
+      border: 1px solid #334155;
+    }
+
+    .notice p {
+      color: #94a3b8;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 11px;
+      padding: 30px 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">CKP.</div>
+    <div class="subtitle">Catatan Keuangan Pribadi</div>
+  </header>
+
+  <main>
+    <h2 class="welcome">Selamat Datang!</h2>
+    <p class="description">
+      Kelola dan pantau keuanganmu dalam satu aplikasi.
+    </p>
+
+    <div class="balance-card">
+      <div class="balance-label">Total Saldo</div>
+      <div class="balance">Rp 0</div>
+    </div>
+
+    <h3 class="section-title">Menu Utama</h3>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <div class="card-title">Dashboard</div>
+        <div class="card-desc">Ringkasan keuangan</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">💳</div>
+        <div class="card-title">Transaksi</div>
+        <div class="card-desc">Pemasukan dan pengeluaran</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏦</div>
+        <div class="card-title">Rekening</div>
+        <div class="card-desc">Kelola rekening</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📅</div>
+        <div class="card-title">Anggaran</div>
+        <div class="card-desc">Rencana pengeluaran</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <div class="card-title">Laporan</div>
+        <div class="card-desc">Analisis keuangan</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">⚖️</div>
+        <div class="card-title">Neraca</div>
+        <div class="card-desc">Aset dan kewajiban</div>
+      </div>
+
+    </div>
+
+    <div class="notice">
+      <strong>🚀 CKP sedang dibangun</strong>
+      <p>
+        Ini merupakan fondasi awal aplikasi.
+        Fitur pencatatan, laporan, anggaran,
+        dan pengelolaan kekayaan akan dikembangkan
+        secara bertahap.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    CKP Finance © 2026
+  </footer>
+
+</body>
+</html>

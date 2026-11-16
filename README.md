@@ -1,8 +1,9 @@
-# CKP Finance V5 – Perbaikan Saldo & Sound Effect
+# CKP Finance V6
 
-1. Upload seluruh isi folder ini ke root repository GitHub Pages, branch `main`, timpa file lama.
-2. Refresh aplikasi. Buat backup JSON sebelum melakukan impor ulang.
-3. Impor ulang workbook Excel untuk menerapkan perbaikan pemetaan rekening tujuan transfer.
-4. Periksa ringkasan impor, khususnya `transferWithoutDestination` yang harus 0. Jika bukan 0, jangan gunakan saldo sebagai angka final dan kirim ringkasannya.
+Perbaikan rekonsiliasi saldo berdasarkan kolom bantu Excel `Efek ke Rek. Asal` dan `Efek ke Rek. Tujuan`. Ini mengikuti perhitungan workbook sumber untuk pemasukan, pengeluaran, transfer, utang, dan piutang. Sound effect V5 dipertahankan.
 
-V5 menambahkan sound effect Web Audio pada interaksi tombol (dengan pengaturan ON/OFF), memperbaiki normalisasi tujuan transfer, dan menambahkan diagnostik saldo saat impor. Data lama di localStorage tidak otomatis dihapus.
+## Pemasangan
+Unggah isi folder ini ke root repository branch `main`, timpa file lama, lalu commit. Setelah deploy, buat backup JSON sebelum impor ulang. Impor ulang workbook akan mengganti data modul hasil impor.
+
+## Verifikasi
+Setelah impor, ringkasan menampilkan `computedAccountTotal`. Cocokkan dengan total `Saldo Saat Ini` di sheet Rekening Excel. Untuk workbook yang diberikan, targetnya Rp3.110.452. Verifikasi akhir tetap perlu dilakukan di browser.
